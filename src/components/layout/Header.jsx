@@ -6,6 +6,8 @@ const navItems = ["ABOUT US", "ABILITY", "ROADMAP", "TELEGRAM", "TWITTER"];
 const Header = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
 
+  console.log(isMenuActive);
+
   return (
     <div className="px-5">
       <div className="relative max-w-[1700px] mx-auto py-10">
@@ -16,7 +18,7 @@ const Header = () => {
 
           <div
             className={clsx(
-              "fixed left-0 top-0 w-screen xl:w-auto h-screen xl:h-auto xl:static 2xl:w-1/3 z-50 bg-[#C5EC73] xl:bg-transparent transition-all",
+              "fixed left-0 w-screen xl:w-auto h-screen xl:h-auto xl:static 2xl:w-1/3 z-50 bg-[#C5EC73] xl:bg-transparent transition-all",
               isMenuActive ? "top-0" : "-top-full"
             )}
           >
